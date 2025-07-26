@@ -28,19 +28,16 @@ The goal is to extract insights about borrower behavior, payment history, and in
         - Removed redundant columns.
         - Prepared a clean schema for PySpark-based ETL processing.
 3. **Cleaning & Transformation**:
-    - Dropped high null columns: `emp_title`, `title`, `revol_util` ...
-    - Cleaned percentages and dates.
-    - Casted monetary columns to float with 2 decimal places.
+    - soon
 4. **Star Schema Modeling**:
-    - Built dimension tables: `dim_customer`, `dim_investor`, `dim_time`, etc.
-    - Built fact table: `fact_loans`.
+    - soon
 5. **Data Load to DWH**:
-    - PostgreSQL used for loading modeled data.
+    - soon
 6. **Dashboard**:
-    - Power BI dashboard to show loan performance, investor returns, and risk segmentation.
+    - soon
 
 ## 📊 Sample Dashboard
-*(add screenshots here)*
+    - soon
 
 ## 📝 Project Status
 ✅ Data Cleaning  
