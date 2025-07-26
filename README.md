@@ -6,7 +6,7 @@ This project focuses on analyzing LendingClub loan data to assess credit risk an
 ## Objective
 The goal is to extract insights about borrower behavior, payment history, and investor activity — and to prepare the data for downstream analytics and reporting.
 
-**Dataset**: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability) from Kaggle.
+**Dataset**: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability) from Kaggle.<br>
 📚 Learn more about LendingClub [here](https://en.wikipedia.org/wiki/LendingClub).
 
 ## 🛠️ Tools Used
