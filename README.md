@@ -6,6 +6,9 @@ This project focuses on analyzing LendingClub loan data to assess credit risk an
 ## Objective
 The goal is to extract insights about borrower behavior, payment history, and investor activity — and to prepare the data for downstream analytics and reporting.
 
+Dataset: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability) from Kaggle.
+📚 Learn more about LendingClub [here](https://en.wikipedia.org/wiki/LendingClub).
+
 ## 🛠️ Tools Used
 - PySpark
 - Apache Airflow
@@ -14,9 +17,10 @@ The goal is to extract insights about borrower behavior, payment history, and in
 - Python
 
 ## 🧱 Project Structure
-1. **Data Source**: [LendingClub loan dataset](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability) from Kaggle.
-📚 You can read more about Lending Club [here](https://en.wikipedia.org/wiki/LendingClub).
-2. **Exploration**: PySpark exploration and missing values analysis.
+1. **Data Source**: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability).
+2. **Exploration**:
+- Business Context
+Developed an understanding of LendingClub's business model — focusing on loan issuance, credit risk evaluation, and borrower-investor dynamics.
 3. **Cleaning & Transformation**:
     - Dropped high null columns: `emp_title`, `title`, `revol_util` ...
     - Cleaned percentages and dates.
