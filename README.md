@@ -19,8 +19,14 @@ Dataset: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/data
 ## 🧱 Project Structure
 1. **Data Source**: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability).
 2. **Exploration**:
-- Business Context
-Developed an understanding of LendingClub's business model — focusing on loan issuance, credit risk evaluation, and borrower-investor dynamics.
+    - Business Context
+        - Developed an understanding of LendingClub's business model — focusing on loan issuance, credit risk evaluation, and borrower-investor dynamics.
+    - Explore Dataset:
+        - Analyzed the CSV datasets provided from Kaggle to assess patterns related to credit risk and population stability across loans.
+        - Initial Data Cleaning & Schema Identification.
+        - Inspected and cleaned missing or inconsistent values.
+        - Removed redundant columns.
+        - Prepared a clean schema for PySpark-based ETL processing.
 3. **Cleaning & Transformation**:
     - Dropped high null columns: `emp_title`, `title`, `revol_util` ...
     - Cleaned percentages and dates.
