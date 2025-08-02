@@ -1,0 +1,11 @@
+
+docker exec -it loans_postgres psql -U postgres -d postgres_db_src
+
+\dt
+
+select * from "Borrower" LIMIT 5;
+select * from "CreditHistory" LIMIT 5;
+
+// check ip address of loans_postgres container 
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' loans_postgres
+
