@@ -23,7 +23,8 @@ The goal is to extract insights about borrower behavior, payment history, and in
     - Performed initial data cleaning and identified the schema for ETL.
 3. **Multi-source Simulation**:
       - Split the dataset into 6 structured tables for better processing using pyspark.    
-      - 3 tables on postgres, 3 on AWS S3. <br>
+      - 3 tables on postgres, 3 on AWS S3.
+      <br>
       ![Multi-source Simulation](batch/imgs/normalization.png)
 4. **DWH Star Schema":
       ![schema](batch/imgs/star_schema.jpeg)      
