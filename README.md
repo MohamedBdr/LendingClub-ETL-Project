@@ -9,26 +9,29 @@ The goal is to extract insights about borrower behavior, payment history, and in
 **Dataset**: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability) from Kaggle.<br>
 📚 Learn more about LendingClub [here](https://en.wikipedia.org/wiki/LendingClub).
 
+## Project Architecture
+- **Batch Pipeline**: Built a Snowflake DWH integrating PostgreSQL and S3 sources, transformed into a Star Schema, and connected to Power BI for analytics.
+      - CSV → Multi-source Simulation (Postgres/S3) using Pyspark → Airbyte → DWH / Star Schema → dbt → Dashboard.
+- **Streaming Pipeline**: 
+- **Deployment** : Entire stack containerized using Docker and Docker Compose.
 ## 🛠️ Tools Used
 - PySpark
 - Apache Airflow
+- Airbyte
 - PostgreSQL
 - Power BI
 - Python
-
-## 🧱 Project Structure
+- S3
+- dbt
+  
+## 🧱 Batch Pipeline Breakdown
 1. **Data Source**: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability).
 2. **Exploration**:
-    - Business Context
-        - Developed an understanding of LendingClub's business model — focusing on loan issuance, credit risk evaluation, and borrower-investor dynamics.
-    - Explore Dataset:
-        - Analyzed the CSV datasets provided from Kaggle to assess patterns related to credit risk and population stability across loans.
-        - Initial Data Cleaning & Schema Identification.
-        - Inspected and cleaned missing or inconsistent values.
-        - Removed redundant columns.
-        - Prepared a clean schema for PySpark-based ETL processing.
+    - Explored LendingClub's business model and credit risk context.
+    - Split the dataset into 6 structured tables for better processing using pyspark.
+    - Performed initial data cleaning and identified the schema for ETL.
 3. **Cleaning & Transformation**:
-    - soon
+    
 4. **Star Schema Modeling**:
     - soon
 5. **Data Load to DWH**:
