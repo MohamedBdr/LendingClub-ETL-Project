@@ -26,10 +26,10 @@ The goal is to extract insights about borrower behavior, payment history, and in
       - 3 tables on postgres, 3 on AWS S3.      <br>
 
       ![Multi-source Simulation](batch/imgs/normalization.png)
-4. **DWH Star Schema":
+4. **DWH Star Schema":      <br>
       ![schema](batch/imgs/star_schema.jpeg)      
 
-6. **Dashboard**:
+6. **Dashboard**:      <br>
       ![dashboard](batch/imgs/dashboard.jpeg)  
 
 
