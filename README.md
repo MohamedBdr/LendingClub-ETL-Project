@@ -14,6 +14,24 @@ The goal is to extract insights about borrower behavior, payment history, and in
       - CSV → Multi-source Simulation (Postgres/S3) using Pyspark → Airbyte → DWH / Star Schema → dbt → Dashboard.
 - **Streaming Pipeline**: 
 - **Deployment** : Entire stack containerized using Docker and Docker Compose.
+
+  
+## 🧱 Batch Pipeline Breakdown
+1. **Data Source**: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability).
+2. **Exploration**:
+    - Explored LendingClub's business model and credit risk context.
+    - Performed initial data cleaning and identified the schema for ETL.
+3. **Multi-source Simulation**:
+      - Split the dataset into 6 structured tables for better processing using pyspark.    
+      - 3 tables on postgres, 3 on AWS S3. <br>
+      ![Multi-source Simulation](batch/imgs/normalization.png)
+4. **DWH Star Schema":
+      ![schema](batch/imgs/star_schema.jpeg)      
+
+6. **Dashboard**:
+    ![dashboard](batch/imgs/dashboard.jpeg)  
+
+
 ## 🛠️ Tools Used
 - PySpark
 - Apache Airflow
@@ -23,32 +41,6 @@ The goal is to extract insights about borrower behavior, payment history, and in
 - Python
 - S3
 - dbt
-  
-## 🧱 Batch Pipeline Breakdown
-1. **Data Source**: [Loan - Credit Risk & Population Stability](https://www.kaggle.com/datasets/beatafaron/loan-credit-risk-and-population-stability).
-2. **Exploration**:
-    - Explored LendingClub's business model and credit risk context.
-    - Performed initial data cleaning and identified the schema for ETL.
-3. **Multi-source Simulation**:
-      - Split the dataset into 6 structured tables for better processing using pyspark.    
-      - 3 tables on postgres, 3 on AWS S3.
-      - ![Multi-source Simulation](batch/imgs/normalization.png)
-4. **Star Schema Modeling**:
-    - soon
-5. **Data Load to DWH**:
-    - soon
-6. **Dashboard**:
-    - soon
-
-## 📊 Sample Dashboard
-    - soon
-
-## 📝 Project Status
-✅ Data Cleaning  
-✅ DWH Modeling  
-⏳ Airflow DAGs  
-✅ Power BI Dashboard
-
 
 ## 🛡️ License
 This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
