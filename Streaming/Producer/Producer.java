@@ -29,17 +29,12 @@ public class producer {
 
         // URL 1 handler (for topic1 + topic3)
         ChangeHandler handler1 = new ChangeHandler(kproducer);
-        // URL 2 handler (for topic2 only)
-        ChangeHandler2 handler2 = new ChangeHandler2(kproducer);
 
         String Url1 = "http://44.201.87.53:5000/stream";
-        String Url2 = "http://localhost:5001/stream";
 
         EventSource eventSource1 = new EventSource.Builder(handler1, URI.create(Url1)).build();
-        EventSource eventSource2 = new EventSource.Builder(handler2, URI.create(Url2)).build();
 
         // Start both in background
         eventSource1.start();
-        eventSource2.start();
     }
 }
