@@ -10,6 +10,8 @@ The goal is to extract insights about borrower behavior, payment history, and in
 📚 Learn more about LendingClub [here](https://en.wikipedia.org/wiki/LendingClub).
 
 ## Project Architecture
+![Pipeline Architecture](./ProjectPipeline.png)
+
 - **Batch Pipeline**: Built a Snowflake DWH integrating PostgreSQL and S3 sources, transformed into a Star Schema, and connected to Power BI for analytics.<br>
       - CSV → Multi-source Simulation (Postgres/S3) using Pyspark → Airbyte → DWH / Star Schema → dbt → Dashboard.
   
