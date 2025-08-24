@@ -1,0 +1,92 @@
+version: 2
+
+models:
+      - name: stg_borrower
+        description: "Table of borrowers"
+        columns:
+          - name: BORROWER_KEY
+            description: "Primary key"
+            tests:
+              - unique
+              - not_null
+
+      - name: stg_credithistory
+        description: "Borrowers credit history"
+        columns:
+          - name: CREDIT_HISTORY_KEY
+            description: "Primary key"
+            tests:
+              - unique
+              - not_null
+       
+
+      - name: stg_hardships
+        description: "Hardship records"
+        columns:
+          - name: hardships_key
+            description: "Primary key"
+            tests:
+              - unique
+              - not_null
+          
+
+      - name: stg_loandetails
+        description: "Loan details dimension"
+        columns:
+          - name: loan_details_key
+            description: "Primary key"
+            tests:
+              - unique
+              - not_null
+
+      - name: stg_loanstatus
+        description: "Loan status dimension"
+        columns:
+          - name: LOAN_STATUS_KEY
+            description: "Primary key"
+            tests:
+              - unique
+              - not_null
+
+      - name: stg_factloans
+        description: "Fact table linking borrower, credit history, hardships, loan details, and loan status"
+        columns:
+          - name: loan_id
+            description: "Primary key"
+            tests:
+              - unique
+              - not_null
+          - name: borrower_key
+            description: "FK → borrower"
+            tests:
+              - relationships:
+                  to: source('raw_data','borrower')
+                  field: BORROWER_KEY
+
+          - name: credit_history_key
+            description: "FK → credithistory"
+            tests:
+              - relationships:
+                  to: ref('stg_credithistory')
+                  field: CREDIT_HISTORY_KEY
+
+          - name: hardships_key
+            description: "FK → hardships"
+            tests:
+              - relationships:
+                  to: source('raw_data','hardships')
+                  field: hardships_key
+
+          - name: loan_details_key
+            description: "FK → loandetails"
+            tests:
+              - relationships:
+                  to: ref('stg_loandetails')
+                  field: loan_details_key
+
+          - name: loan_status_key
+            description: "FK → loanstatus"
+            tests:
+              - relationships:
+                  to: ref('stg_loanstatus')
+                  field: LOAN_STATUS_KEY
