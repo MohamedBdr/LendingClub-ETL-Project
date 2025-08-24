@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: LOANS_DWH
+    schema: RAW
+    tables:
+      - name: borrower
+      - name: credithistory
+      - name: hardships
+      - name: loandetails
+      - name: loanstatus
+      - name: factloans
+        
