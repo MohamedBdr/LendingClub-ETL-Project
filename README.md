@@ -86,17 +86,17 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 ## Team Members
 Let's stay in touch! Feel free to connect with us on the following platforms:  
-Abdelrahman Tarek
+- Abdelrahman Tarek 
 [LinkedIn](https://www.linkedin.com/in/abdelrahman-shear-0a44342a7/)
-Khaled Salah
+- Khaled Salah 
 [LinkedIn](https://www.linkedin.com/in/khaled-salah5148/)
-Ahmed El-Sayed
+- Ahmed El-Sayed 
 [LinkedIn](https://www.linkedin.com/in/ahmed-rostom55/)
-Mohamed Ibrahim
+- Mohamed Ibrahim 
 [LinkedIn](https://www.linkedin.com/in/mohamed-ebrahim-8356351b2/)
-Mohamed Badr
+- Mohamed Badr 
 [LinkedIn](https://www.linkedin.com/in/mbi162/)
-Mahmoud Khalid
+- Mahmoud Khalid 
 [LinkedIn](https://www.linkedin.com/in/mahmoud-khalid-4b08141a1/)
 
 
